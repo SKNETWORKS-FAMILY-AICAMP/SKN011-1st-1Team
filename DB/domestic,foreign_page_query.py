@@ -77,3 +77,16 @@ def showModelDetail(model_seq): # 모델 번호 기반 관련 데이터 조회
     return result
 
 # print(showModelDetail(1))
+
+def showAnotherModelDetail(model_seq):
+
+    cursor=connection.cursor(dictionary=True)
+    sql= f'SELECT * FROM total_sales_desc WHERE model_category=(SELECT model_category FROM model WHERE model_seq={model_seq})'
+    cursor.execute(sql)
+    result=cursor.fetchall
+
+    cursor.close()
+
+    return result
+
+print(showAnotherModelDetail(1))
