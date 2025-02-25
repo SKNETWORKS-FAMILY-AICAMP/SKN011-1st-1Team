@@ -1,4 +1,8 @@
-USE carcatdb;
+CREATE USER 'catcar'@'localhost' IDENTIFIED BY 'catcar';
+GRANT ALL PRIVILEGES ON catcardb.* TO 'catcar'@'localhost';
+CREATE DATABASE catcardb;
+
+USE catcardb;
 
 CREATE TABLE `brand` (
     `brand_seq` INT NOT NULL AUTO_INCREMENT COMMENT 'auto increment',

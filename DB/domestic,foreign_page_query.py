@@ -2,9 +2,9 @@ import mysql.connector
 
 connection= mysql.connector.connect(
     host='localhost',
-    user='ohgiraffers',
-    password='ohgiraffers',
-    database='carcatdb',
+    user='catcar',
+    password='catcar',
+    database='catcardb',
 )
 
 def domesticShowBrand(): # brand 테이블의 브랜드명 조회 # 국내 차종 검색 페이지
@@ -78,15 +78,15 @@ def showModelDetail(model_seq): # 모델 번호 기반 관련 데이터 조회
 
 # print(showModelDetail(1))
 
-def showAnotherModelDetail(model_seq):
+def showAnotherModelDetail(model_seq,limit): # 해당 model_seq와 카테고리 값이 같은 데이터들을 총 판매량을 기준으로 내림차순으로 limit개까지 딕셔너리로 산출함
 
     cursor=connection.cursor(dictionary=True)
-    sql= f'SELECT * FROM total_sales_desc WHERE model_category=(SELECT model_category FROM model WHERE model_seq={model_seq})'
+    sql= f'SELECT * FROM total_sales_desc WHERE model_category=(SELECT model_category FROM model WHERE model_seq={model_seq}) AND model_seq != {model_seq} LIMIT {limit}'
     cursor.execute(sql)
-    result=cursor.fetchall
+    result=cursor.fetchall()
 
     cursor.close()
 
     return result
 
-print(showAnotherModelDetail(1))
+# print(showAnotherModelDetail(1,3))
