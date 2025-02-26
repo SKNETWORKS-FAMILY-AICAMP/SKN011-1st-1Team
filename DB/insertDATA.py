@@ -10,8 +10,8 @@ connection= mysql.connector.connect(
 cursor=connection.cursor()
 
 insert_brand_sql='INSERT INTO `brand` (`brand_name`, `brand_country`) VALUES (%s,%s)'
-brand_values=()
-cursor.executemany(insert_brand_sql,brand_values)
+brand_values=('현대',0)
+cursor.execute(insert_brand_sql,brand_values)
 connection.commit()
 
 insert_model_sql='INSERT INTO `model` (`model_name`, `model_image`, `model_price`, `model_category`, `brand_seq`) VALUES(%s,%s,%s,%s,%s)'
