@@ -1,7 +1,7 @@
 # SK 네트웍스 Family AI 캠프 11기 1차 프로젝트
 <br/>
 
-# ITRODUCTION TEAM
+# INTRODUCTION TEAM
 ## ⭐중증 CORE 센터⭐
 
 ![team_logo_img](./image/팀고양이.jpg)
