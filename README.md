@@ -9,7 +9,7 @@
 |김상익|김장수|김형주|이  근|전유빈|
 |:---:|:---:|:---:|:---:|:---:|
 |![cat1](./image/자동차고양이1.jpg)|![cat2](./image/자동차고양이2.jpg)|![cat3](./image/자동차고양이3.jpg)|![cat4](./image/토토로고양이.jpg)|![cat5](./image/자동차고양이4.jpg)|
-|깃링크|깃링크|[@김형주](https://github.com/Kim-Hyeong-Ju)|[@이근](https://github.com/REROUN)|[@전유빈](https://github.com/yubnyx)|
+|[@김상익](https://github.com/GTU9)|깃링크|[@김형주](https://github.com/Kim-Hyeong-Ju)|[@이근](https://github.com/REROUN)|[@전유빈](https://github.com/yubnyx)|
 
 <br/>
 
