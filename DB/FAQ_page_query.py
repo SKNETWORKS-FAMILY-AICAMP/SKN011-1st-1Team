@@ -3,8 +3,8 @@ from datetime import datetime
 
 connection= mysql.connector.connect(
     host='localhost',
-    user='catcar',
-    password='catcar',
+    user='',
+    password='',
     database='catcardb',
 )
 
@@ -12,17 +12,14 @@ def FAQ1(model_seq):
 
     cursor = connection.cursor(dictionary=True) # 딕셔너리 형태로 반환
 
-    year=datetime.today().year # 올해 년수
     year_avg_sales_cnt=''
 
-    while(len(year_avg_sales_cnt)==0): # 올해 평균 판매량 출력 (올해 데이터가 존재하지 않는다면 작년으로 변경)
-        sql1=f'SELECT model_seq,model_name, AVG(sales_price_cnt) as "year_avg_sales_cnt" FROM model JOIN sales USING (model_seq) WHERE sales_year={year} AND model_seq={model_seq} GROUP BY model_seq'
-        cursor.execute(sql1)
-        year_avg_sales_cnt=cursor.fetchall()
-        year-=1
-        if(year<=2000): # 데이터가 없는 경우 더미데이터 출력력
-            year_avg_sales_cnt=[{'model_seq': -1, 'model_name': '', 'year_avg_sales_cnt': 0}]
-            break
+     # 올해 평균 판매량 출력 (올해 데이터가 존재하지 않는다면 작년으로 변경)
+    sql1=f'SELECT model_seq,model_name, AVG(sales_price_cnt) as "year_avg_sales_cnt" FROM model JOIN sales USING (model_seq) WHERE model_seq={model_seq} GROUP BY model_seq'
+    cursor.execute(sql1)
+    year_avg_sales_cnt=cursor.fetchall()
+    if(year_avg_sales_cnt == []): # 데이터가 없는 경우 더미데이터 출력력
+        year_avg_sales_cnt=[{'model_seq': -1, 'model_name': '', 'year_avg_sales_cnt': 0}]
     
 
     sql2=f'SELECT model_seq,model_name, sales_price_cnt FROM model JOIN sales USING (model_seq) WHERE model_seq={model_seq} LIMIT 1' # 해당 모델의 가장 최근 판매량 출력
@@ -54,7 +51,7 @@ def FAQ3(model_seq): # 해당 모델의 월별 평균 판매량 데이터를 산
 
     cursor = connection.cursor(dictionary=True) # 딕셔너리 형태로 반환
 
-    sql2=f'SELECT model_seq, model_name, sales_month, AVG(sales_price_cnt) AS month_avg_sales FROM model JOIN sales USING (model_seq) WHERE model_seq={model_seq} GROUP BY model_seq, model_name,sales_month ORDER BY AVG(sales_price_cnt) DESC' 
+    sql2=f'SELECT model_seq, model_name, sales_month, AVG(sales_price_cnt) AS month_avg_sales FROM model JOIN sales USING (model_seq) WHERE model_seq={model_seq} GROUP BY model_seq, model_name,sales_month ORDER BY AVG(sales_price_cnt) DESC LIMIT 1' 
     cursor.execute(sql2)
     result=cursor.fetchall()
 
