@@ -99,7 +99,23 @@
 <br/>
 
 # 수행 결과
-이미지
+
+### 소개 및 메인페이지
+![image](https://github.com/user-attachments/assets/2a9f885f-1b1a-47bb-adb7-fefd84035f3c)
+
+### 차량 검색 및 해당 모델과 같은 타입의 차종 실적 비교
+![image](https://github.com/user-attachments/assets/8acacf8b-bb9d-4a80-a95b-f66531a5e501)
+
+### 특정 차량 모델의 월별 판매량 및 실적과 기사
+![image](https://github.com/user-attachments/assets/1c021e3e-afc6-482f-85f2-876857a285b5)
+
+### 스크랩핑된 데이터를 기반으로 적절한 FAQ 알고리즘 구현
+![image](https://github.com/user-attachments/assets/c59ddd24-6f16-4170-80e0-b7e742ce74e4)
+
+![image](https://github.com/user-attachments/assets/50c8a4cb-a337-4991-8c7d-bbe92ca373b6)
+
+
+
 
 <br/>
 
