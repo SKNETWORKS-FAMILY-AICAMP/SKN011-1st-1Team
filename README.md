@@ -103,7 +103,6 @@
 
 ![image](https://github.com/user-attachments/assets/57c917af-9a92-4bee-a6f9-7fb4c94610c0)
 
-
 <br/>
 
 # 수행 결과
@@ -121,9 +120,6 @@
 ![image](https://github.com/user-attachments/assets/c59ddd24-6f16-4170-80e0-b7e742ce74e4)
 
 ![image](https://github.com/user-attachments/assets/50c8a4cb-a337-4991-8c7d-bbe92ca373b6)
-
-
-
 
 <br/>
 
@@ -143,3 +139,5 @@
 
 - **김형주**
   <br/> selenium을 활용한 웹 크롤링이 처음이라 많이 걱정했지만, 팀원들의 조언과 응원에 힘입어 좋은 결과를 만들 수 있었습니다.
+
+# 피드백
