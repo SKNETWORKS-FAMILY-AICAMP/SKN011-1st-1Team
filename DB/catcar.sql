@@ -24,10 +24,10 @@ CREATE TABLE `model` (
     CONSTRAINT `FK_MODEL_BRAND` FOREIGN KEY (`brand_seq`) REFERENCES `brand` (`brand_seq`) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE `News` (
+CREATE TABLE ` news` (
     `news_seq` INT NOT NULL AUTO_INCREMENT COMMENT 'auto increment',
     `news_title` VARCHAR(50) NOT NULL,
-    `news_detail` VARCHAR(3000) NOT NULL,
+    `news_detail` VARCHAR(3000),
     `news_url` VARCHAR(255) NOT NULL,
     `model_seq` INT NOT NULL,
     CONSTRAINT `PK_NEWS` PRIMARY KEY (`news_seq`),
