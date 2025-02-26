@@ -8,6 +8,7 @@
 |김상익|김장수|김형주|이  근|전유빈|
 |:---:|:---:|:---:|:---:|:---:|
 |깃링크|깃링크|깃링크|깃링크|깃링크|
+
 <br/>
 
 # INTRODUCTION PROJECT
@@ -26,6 +27,7 @@
 ### ✅목표
 목표
 
+<br/>
 
 # ⚒️기술 스택
 ## 주요 기술
@@ -33,20 +35,19 @@
 
 |<img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">|<img src="https://img.shields.io/badge/vscode-1A9FFF">|<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">|
 |:---:|:---:|:---:|
-<br/>
 
 > UI
 
 |<img src="https://img.shields.io/badge/streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white">|
 |:---:|
-<br/>
 
 > 데이터 수집 및 처리
 
 |<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">|<img src="https://img.shields.io/badge/selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white">|<img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white">|<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">|
 |:---:|:---:|:---:|:---:|
+<br/>
 
-
+# WBS
 
 
 # 요구사항 명세서
@@ -54,3 +55,18 @@
 
 # ERD
 이미지
+
+# 수행 결과
+이미지
+
+# 한 줄 회고
+
+- **김상익**
+
+- **김장수**
+
+- **김형주**
+
+- **이 근**
+
+- **전유빈**
