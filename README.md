@@ -92,7 +92,8 @@
 <br/>
 
 # ERD
-이미지
+
+![ERD](./image/ERD.png)
 
 <br/>
 
