@@ -3,8 +3,8 @@ from datetime import datetime
 
 connection= mysql.connector.connect(
     host='localhost',
-    user='',
-    password='',
+    user='root',
+    password='root',
     database='catcardb',
 )
 
@@ -45,7 +45,7 @@ def FAQ1(model_seq):
     
     return result
 
-# print(FAQ1(1))
+print(FAQ1(1))
 
 def FAQ3(model_seq): # 해당 모델의 월별 평균 판매량 데이터를 산출하여 판매량이 가장 높을 때부터 내림차순으로 출력
 
@@ -59,4 +59,4 @@ def FAQ3(model_seq): # 해당 모델의 월별 평균 판매량 데이터를 산
     
     return result
 
-print(FAQ3(1))
+# print(FAQ3(1))

@@ -2,8 +2,8 @@ import mysql.connector
 
 connection= mysql.connector.connect(
     host='localhost',
-    user='',
-    password='',
+    user='root',
+    password='root',
     database='catcardb',
 )
 

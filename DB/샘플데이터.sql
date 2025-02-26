@@ -20,7 +20,7 @@ INSERT INTO `model` (`model_name`, `model_image`, `model_price`, `model_category
 ('Huawei P50', 'p50.jpg', 1100000, 'Smartphone', 5);
 
 -- News 데이터 삽입 (각 model 별 1개씩)
-INSERT INTO `News` (`news_title`, `news_detail`, `news_url`, `model_seq`) VALUES
+INSERT INTO `news` (`news_title`, `news_detail`, `news_url`, `model_seq`) VALUES
 ('Galaxy S24 출시', '삼성전자가 최신 스마트폰 Galaxy S24를 출시했습니다.', 'https://news.com/galaxy_s24', 1),
 ('Galaxy Z Flip5 인기', '접이식 스마트폰 시장에서 Galaxy Z Flip5가 돌풍을 일으키고 있습니다.', 'https://news.com/zflip5', 2),
 ('iPhone 15 리뷰', 'iPhone 15가 뛰어난 성능과 디자인으로 주목받고 있습니다.', 'https://news.com/iphone15', 3),
