@@ -68,6 +68,7 @@
 |FAQ 작성|02.25|02.25|ALL|[노션 페이지](https://www.notion.so/ohgiraffers/Core-1a4649136c118066b76bef49b54e95ff)|없음|
 |Streamlit 화면 구현|02.25|02.25|전유빈|Web Page|Streamlit 화면 설계|
 |데이터 크롤링|02.25|02.26|김장수, 김형주, 이근|DB 데이터|없음|
+|DB 생성|02.26|02.26|김상익, 이근|없음|ERD|
 |데이터-DB연동|02.26|02.26|김상익, 이근|DB 데이터|데이터 크롤링|
 |Streamlit-DB연동|02.26|02.26|김상익, 이근, 전유빈|Web Page|Streamlit 화면 구현, DB|
 |코드 취합|02.26|02.26|??|Web Page, DB 데이터|데이터 크롤링, Streamlit 화면 구현|
